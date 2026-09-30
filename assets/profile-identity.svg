@@ -7,10 +7,6 @@
       <stop offset=".55" stop-color="#fff" stop-opacity=".22"/>
       <stop offset="1" stop-color="#fff" stop-opacity="0"/>
     </linearGradient>
-    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="3" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
     <clipPath id="eye-frame"><rect x="970" y="18" width="210" height="199" rx="16"/></clipPath>
   </defs>
   <style>
@@ -19,29 +15,19 @@
     .role { font-family: Inter, Arial, sans-serif; font-size: 23px; font-weight: 750; letter-spacing: .8px; fill: #fff; }
     .copy { font-family: Inter, Arial, sans-serif; font-size: 19.5px; font-weight: 520; letter-spacing: .1px; fill: #c9d1d9; }
     .eyebrow { font-family: Inter, Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2.6px; fill: #8b949e; }
-    .signature { animation: settle 8s cubic-bezier(.45,0,.55,1) infinite; transform-origin: 445px 82px; }
-    .line { animation: draw 7s ease-in-out infinite; transform-origin: left; }
-    .eye-art { animation: eyeBreath 10s cubic-bezier(.45,0,.55,1) infinite; transform-origin: 1075px 117px; }
-    .eye-scan { animation: eyeScan 6s linear infinite; }
-    @keyframes settle { 0%,100% { opacity: .92; transform: translateY(0); } 50% { opacity: 1; transform: translateY(-1px); } }
-    @keyframes draw { 0%,100% { transform: scaleX(.35); opacity: .35; } 50% { transform: scaleX(1); opacity: .9; } }
-    @keyframes eyeBreath { 0%,100% { opacity: .9; transform: scale(1); } 50% { opacity: 1; transform: scale(1.018); } }
-    @keyframes eyeScan { 0% { transform: translateY(-18px); opacity: 0; } 12%,88% { opacity: .42; } 100% { transform: translateY(225px); opacity: 0; } }
-    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
   </style>
   <rect x="1" y="1" width="1198" height="233" rx="20" fill="#0d1117" stroke="#30363d"/>
   <text x="58" y="40" class="eyebrow">PRODUCTION AI · BACKEND SYSTEMS · AUTOMATION</text>
-  <g class="signature">
+  <g>
     <text x="56" y="106" class="bold">KANISHK</text>
     <text x="400" y="106" class="script">Wagh</text>
   </g>
-  <rect x="58" y="121" width="535" height="1" fill="url(#rule)" class="line"/>
+  <rect x="58" y="121" width="535" height="1" fill="url(#rule)"/>
   <text x="58" y="151" class="role">AI Systems Engineer</text>
   <text x="58" y="184" class="copy">I build production AI products across LLMs, computer vision, retrieval, and backend infrastructure—</text>
   <text x="58" y="207" class="copy">turning ambitious prototypes into reliable systems with measurable performance and business value.</text>
   <g clip-path="url(#eye-frame)">
-    <image class="eye-art" href="./identity-cyber-eye.png" x="970" y="18" width="210" height="199" preserveAspectRatio="xMidYMid slice"/>
-    <rect class="eye-scan" x="970" y="0" width="210" height="2" fill="#fff" filter="url(#glow)"/>
+    <image href="./identity-cyber-eye.png" x="970" y="18" width="210" height="199" preserveAspectRatio="xMidYMid slice"/>
   </g>
   <rect x="970" y="18" width="210" height="199" rx="16" fill="none" stroke="#fff" stroke-opacity=".18"/>
 </svg>
