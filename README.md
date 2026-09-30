@@ -19,6 +19,7 @@
 | Project | What it demonstrates | Links |
 | --- | --- | --- |
 | **Lumiqe** | AI-powered image analysis and personal styling with computer vision and LLMs. | [Repository](https://github.com/kanishk083/lumiqe) · [Portfolio](https://kanishkwagh-portfolio.vercel.app/) |
+| **AURA WHEY** | Production e-commerce engineering across storefront UX, APIs, automation, and deployment. | [Repository](https://github.com/kanishk083/AURA-WHEY) |
 | **ATLAS** | AI knowledge and memory systems built around retrieval, reasoning, and automation. | [Repository](https://github.com/kanishk083/ATLAS) |
 | **Drone Detection** | YOLO11n, FastAPI, Next.js, tracking, and measured CPU inference optimization. | [Repository](https://github.com/kanishk083/DRONE-DETECTION) |
 | **Competitor Analyzer Agent** | Website change detection, SHA-256 monitoring, and LLM-generated business insights. | [Repositories](https://github.com/kanishk083?tab=repositories&q=competitor) |
