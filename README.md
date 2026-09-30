@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/neural-cv.svg" alt="Monochrome animated developer, neural network, and human-robot hand illustration" width="100%" />
+<img src="./assets/profile-hero-motion.svg" alt="Animated monochrome developer and human-robot collaboration illustration" width="100%" />
 
 <p>
   <a href="https://kanishkwagh-portfolio.vercel.app/">Portfolio</a> ·
