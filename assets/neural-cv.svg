@@ -19,36 +19,73 @@
     </filter>
   </defs>
   <style>
-    .signal { fill: none; stroke: #fff; stroke-width: 1.2; opacity: .6; stroke-dasharray: 5 12; animation: flow 4s linear infinite; }
-    .signal.alt { animation-delay: -1.5s; opacity: .35; }
+    .signal { fill: none; stroke: #fff; stroke-width: 1.2; opacity: .62; stroke-dasharray: 5 12; animation: flow 4s linear infinite; }
+    .signal.alt { animation-delay: -1.5s; opacity: .38; }
+    .signal.soft { animation-duration: 6s; opacity: .28; }
     .node { fill: #050505; stroke: #fff; stroke-width: 1.5; animation: pulse 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
     .node.two { animation-delay: -.8s; }
     .node.three { animation-delay: -1.7s; }
     .node.four { animation-delay: -2.3s; }
+    .particle { fill: #fff; opacity: .8; animation: particlePulse 1.8s ease-in-out infinite; }
+    .particle.two { animation-delay: -.6s; }
+    .particle.three { animation-delay: -1.2s; }
+    .particle.four { animation-delay: -1.55s; }
     .scanline { animation: sweep 5.5s ease-in-out infinite; }
+    .hscan { animation: scanDown 6s ease-in-out infinite; }
+    .hscan.two { animation-delay: -3s; opacity: .16; }
     .corner { fill: none; stroke: #fff; stroke-width: 1; opacity: .42; stroke-dasharray: 18 8; animation: corner 8s linear infinite; }
+    .orbit { fill: none; stroke: #fff; stroke-width: 1; opacity: .23; stroke-dasharray: 2 13; transform-box: fill-box; transform-origin: center; animation: orbit 18s linear infinite; }
+    .orbit.two { animation-direction: reverse; animation-duration: 24s; opacity: .16; }
+    .chart { fill: none; stroke: #fff; stroke-width: 1; stroke-dasharray: 4 7; animation: chart 4.8s ease-in-out infinite; }
+    .chart.two { animation-delay: -2.2s; opacity: .55; }
+    .flicker { animation: flicker 3.8s ease-in-out infinite; }
     @keyframes flow { to { stroke-dashoffset: -68; } }
     @keyframes pulse { 0%,100% { opacity: .34; transform: scale(.8); } 50% { opacity: 1; transform: scale(1.28); } }
+    @keyframes particlePulse { 0%,100% { opacity: .15; transform: scale(.6); } 50% { opacity: .95; transform: scale(1.4); } }
     @keyframes sweep { 0%,100% { transform: translateX(-180px); opacity: 0; } 20%,80% { opacity: 1; } 50% { transform: translateX(1380px); } }
+    @keyframes scanDown { 0%,100% { transform: translateY(-18px); opacity: 0; } 18%,82% { opacity: .6; } 50% { transform: translateY(478px); } }
     @keyframes corner { to { stroke-dashoffset: -52; } }
+    @keyframes orbit { to { transform: rotate(360deg); } }
+    @keyframes chart { 0%,100% { stroke-dashoffset: 0; opacity: .2; } 50% { stroke-dashoffset: -42; opacity: .9; } }
+    @keyframes flicker { 0%,100% { opacity: .15; } 47%,53% { opacity: .55; } 50% { opacity: .9; } }
     @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
   </style>
   <g clip-path="url(#frame)">
     <image href="./profile-hero-mono.png" xlink:href="./profile-hero-mono.png" x="0" y="0" width="1200" height="460" preserveAspectRatio="xMidYMid slice"/>
     <rect width="1200" height="460" fill="url(#shade)"/>
 
-    <!-- Subtle animated data flow through the middle system. -->
+    <!-- Moving scan passes make the static wireframe feel like a live interface. -->
+    <rect class="scanline" x="-180" y="0" width="180" height="460" fill="url(#scan)" opacity=".42"/>
+    <rect class="hscan" x="0" y="-5" width="1200" height="3" fill="#fff" opacity=".28" filter="url(#glow)"/>
+    <rect class="hscan two" x="0" y="-5" width="1200" height="1" fill="#fff"/>
+
+    <!-- Animated data flow through the middle neural system. -->
+    <g class="orbit" transform="translate(0 0)">
+      <ellipse cx="620" cy="230" rx="210" ry="105"/>
+      <ellipse cx="620" cy="230" rx="165" ry="78" transform="rotate(54 620 230)"/>
+    </g>
+    <ellipse class="orbit two" cx="620" cy="230" rx="120" ry="56" transform="rotate(-24 620 230)"/>
     <path class="signal" d="M380 228 C470 170 515 274 602 220 S755 175 838 232"/>
     <path class="signal alt" d="M400 278 C485 326 535 204 620 258 S756 310 858 246"/>
-    <path class="signal" d="M430 190 C515 144 575 212 642 184 S760 151 820 196"/>
+    <path class="signal soft" d="M430 190 C515 144 575 212 642 184 S760 151 820 196"/>
 
-    <!-- Pulsing signal nodes reinforce the neural-network animation. -->
+    <!-- Pulsing nodes and traveling data points. -->
     <circle class="node" cx="500" cy="236" r="4" filter="url(#glow)"/>
     <circle class="node two" cx="602" cy="220" r="5" filter="url(#glow)"/>
     <circle class="node three" cx="704" cy="250" r="4" filter="url(#glow)"/>
     <circle class="node four" cx="812" cy="232" r="5" filter="url(#glow)"/>
+    <circle class="particle" cx="424" cy="206" r="2"><animate attributeName="cx" values="424;500;602;704;812" dur="4.2s" repeatCount="indefinite"/><animate attributeName="cy" values="206;236;220;250;232" dur="4.2s" repeatCount="indefinite"/></circle>
+    <circle class="particle two" cx="812" cy="232" r="2"><animate attributeName="cx" values="812;704;602;500;424" dur="4.8s" repeatCount="indefinite"/><animate attributeName="cy" values="232;250;220;236;206" dur="4.8s" repeatCount="indefinite"/></circle>
+    <circle class="particle three" cx="462" cy="280" r="1.8"><animate attributeName="cx" values="462;560;660;760;850" dur="5.2s" repeatCount="indefinite"/><animate attributeName="cy" values="280;258;240;228;246" dur="5.2s" repeatCount="indefinite"/></circle>
+    <circle class="particle four" cx="850" cy="246" r="1.8"><animate attributeName="cx" values="850;760;660;560;462" dur="5.6s" repeatCount="indefinite"/><animate attributeName="cy" values="246;228;240;258;280" dur="5.6s" repeatCount="indefinite"/></circle>
 
-    <rect class="scanline" x="-180" y="0" width="180" height="460" fill="url(#scan)" opacity=".42"/>
+    <!-- Living telemetry panels in the center asset group. -->
+    <g class="flicker">
+      <path class="chart" d="M500 145 C520 125 536 159 552 141 S584 122 603 145 S636 166 660 138"/>
+      <path class="chart two" d="M676 320 C700 298 718 330 740 308 S782 300 810 318"/>
+      <path d="M528 158 h44 M528 165 h28 M738 330 h42 M738 337 h25" stroke="#fff" stroke-width="1" opacity=".42"/>
+    </g>
+
     <rect class="corner" x="18" y="18" width="1164" height="424" rx="18"/>
     <path d="M40 410 H300 M900 410 H1160" stroke="#fff" stroke-width="1" opacity=".24"/>
   </g>
