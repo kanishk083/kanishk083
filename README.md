@@ -2,6 +2,9 @@
 
 <img src="./assets/animated_ai_network.svg" alt="Smooth monochrome animated developer and human-robot collaboration illustration" width="100%" />
 
+<h1>Kanishk Wagh</h1>
+<p><strong>AI Solutions Engineer · Backend Engineer · AI Engineer</strong></p>
+
 <p>
   <a href="https://kanishkwagh-portfolio.vercel.app/">Portfolio</a> ·
   <a href="https://github.com/kanishk083?tab=repositories">Repositories</a> ·

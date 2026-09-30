@@ -10,27 +10,24 @@
 <linearGradient id="shine"><stop stop-color="white" stop-opacity="0"/><stop offset=".5" stop-color="white" stop-opacity=".28"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient>
 <clipPath id="clip-network"><ellipse cx="1020" cy="365" rx="240" ry="265"/></clipPath><clipPath id="clip-human"><polygon points="1685,0 2023,0 2023,270 1960,315 1810,354 1720,366 1708,340 1770,220 1830,110"/></clipPath><clipPath id="clip-robot"><polygon points="1350,777 1495,777 1630,664 1750,568 1785,506 1750,450 1690,417 1741,367 1728,345 1700,365 1645,420 1570,440 1500,510 1435,650"/></clipPath><clipPath id="clip-developer"><polygon points="50,266 170,240 283,96 425,110 515,245 539,460 497,543 343,560 150,631 45,609"/></clipPath><clipPath id="clip-graph1"><rect x="645" y="155" width="216" height="114" rx="3"/></clipPath><clipPath id="clip-graph2"><rect x="708" y="478" width="169" height="113" rx="3"/></clipPath><clipPath id="clip-graph3"><rect x="1136" y="473" width="139" height="90" rx="3"/></clipPath><clipPath id="clip-face"><rect x="1287" y="392" width="137" height="190" rx="3"/></clipPath><clipPath id="clip-smallnet"><rect x="1287" y="129" width="211" height="134" rx="3"/></clipPath><mask id="static-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="2023" height="777"><rect width="2023" height="777" fill="white"/><g fill="black"><ellipse cx="1020" cy="365" rx="240" ry="265"/><polygon points="1685,0 2023,0 2023,270 1960,315 1810,354 1720,366 1708,340 1770,220 1830,110"/><polygon points="1350,777 1495,777 1630,664 1750,568 1785,506 1750,450 1690,417 1741,367 1728,345 1700,365 1645,420 1570,440 1500,510 1435,650"/><polygon points="50,266 170,240 283,96 425,110 515,245 539,460 497,543 343,560 150,631 45,609"/><rect x="645" y="155" width="216" height="114" rx="3"/><rect x="708" y="478" width="169" height="113" rx="3"/><rect x="1136" y="473" width="139" height="90" rx="3"/><rect x="1287" y="392" width="137" height="190" rx="3"/><rect x="1287" y="129" width="211" height="134" rx="3"/></g></mask><mask id="art-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="2023" height="777"><use href="#art" xlink:href="#art"/></mask></defs><style>
 svg{background:#000;color:#fff}
-.network{animation:network 28s cubic-bezier(.45,0,.55,1) infinite;transform-origin:1020px 365px;will-change:transform}
-.human{animation:human 18s cubic-bezier(.45,0,.55,1) infinite;transform-origin:1940px 85px;will-change:transform}
-.robot{animation:robot 18.5s cubic-bezier(.45,0,.55,1) infinite;transform-origin:1465px 700px;will-change:transform}
-.developer{animation:breathe 16s cubic-bezier(.45,0,.55,1) infinite;transform-origin:315px 480px;will-change:transform}
-.panel{animation:float 20s cubic-bezier(.45,0,.55,1) infinite;transform-box:fill-box;transform-origin:center;will-change:transform}
-.panel2{animation-delay:-7s;animation-duration:23s}.panel3{animation-delay:-13s;animation-duration:27s}
-.face{animation:flicker 12s cubic-bezier(.45,0,.55,1) infinite}
-.glow{animation:pulse 6.5s cubic-bezier(.45,0,.55,1) infinite}
-.twinkle{animation:twinkle 6.2s cubic-bezier(.45,0,.55,1) infinite}
-.orbit{animation:orbit 60s linear infinite;transform-origin:1020px 365px;will-change:transform}
-.scan{animation:scan 9s cubic-bezier(.4,0,.2,1) infinite}
-.sweep{animation:sweep 24s linear infinite}
-.signal{stroke-dasharray:12 280;animation:flow 10s linear infinite}
-.signal2{animation-direction:reverse;animation-duration:14s}
-.component{animation:component 22s cubic-bezier(.45,0,.55,1) infinite;transform-box:fill-box;transform-origin:center;will-change:transform}
-@keyframes network{0%,100%{transform:translate(0,0) rotate(0deg)}33%{transform:translate(3px,-2px) rotate(.12deg)}66%{transform:translate(-2px,2px) rotate(-.1deg)}}
-@keyframes human{0%,100%{transform:translate(1px,-1px) rotate(-.05deg)}50%{transform:translate(-1.5px,1.5px) rotate(.08deg)}}
-@keyframes robot{0%,100%{transform:translate(-1px,1px) rotate(-.05deg)}50%{transform:translate(1.5px,-1px) rotate(.08deg)}}
-@keyframes breathe{0%,100%{transform:translateY(0)}50%{transform:translateY(-1.5px)}}
-@keyframes float{0%,100%{transform:translate(0,0)}33%{transform:translate(1.5px,-1.5px)}66%{transform:translate(-1px,1px)}}
-@keyframes component{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(1px,-1px) scale(1.002)}66%{transform:translate(-1px,1px) scale(1.004)}}
+.network{animation:figureBreath 26s cubic-bezier(.45,0,.55,1) infinite;will-change:opacity}
+.human{animation:figureBreath 24s -8s cubic-bezier(.45,0,.55,1) infinite;will-change:opacity}
+.robot{animation:figureBreath 25s -16s cubic-bezier(.45,0,.55,1) infinite;will-change:opacity}
+.developer{animation:figureBreath 22s -5s cubic-bezier(.45,0,.55,1) infinite;will-change:opacity}
+.panel{animation:float 28s cubic-bezier(.45,0,.55,1) infinite;transform-box:fill-box;transform-origin:center;will-change:transform}
+.panel2{animation-delay:-9s;animation-duration:31s}.panel3{animation-delay:-17s;animation-duration:35s}
+.face{animation:flicker 16s cubic-bezier(.45,0,.55,1) infinite}
+.glow{animation:pulse 8s cubic-bezier(.45,0,.55,1) infinite}
+.twinkle{animation:twinkle 8s cubic-bezier(.45,0,.55,1) infinite}
+.orbit{animation:orbit 90s linear infinite;transform-origin:1020px 365px;will-change:transform}
+.scan{animation:scan 12s cubic-bezier(.4,0,.2,1) infinite}
+.sweep{animation:sweep 36s linear infinite}
+.signal{stroke-dasharray:12 280;animation:flow 14s linear infinite}
+.signal2{animation-direction:reverse;animation-duration:18s}
+.component{animation:component 30s cubic-bezier(.45,0,.55,1) infinite;transform-box:fill-box;transform-origin:center;will-change:transform}
+@keyframes figureBreath{0%,100%{opacity:.94}50%{opacity:1}}
+@keyframes float{0%,100%{transform:translate(0,0)}33%{transform:translate(.65px,-.65px)}66%{transform:translate(-.45px,.45px)}}
+@keyframes component{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(.45px,-.45px) scale(1.001)}66%{transform:translate(-.45px,.45px) scale(1.0015)}}
 @keyframes flicker{0%,100%{opacity:.82}50%{opacity:1}}
 @keyframes pulse{0%,100%{opacity:.4;transform:scale(.92)}50%{opacity:.9;transform:scale(1.08)}}
 @keyframes twinkle{0%,100%{opacity:.2}50%{opacity:.85}}
