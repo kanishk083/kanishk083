@@ -15,8 +15,8 @@
   <style>
     .bold { font-family: Inter, "Arial Black", Arial, sans-serif; font-size: 58px; font-weight: 800; letter-spacing: 2px; fill: #fff; }
     .script { font-family: "Segoe Script", "Brush Script MT", "Snell Roundhand", cursive; font-size: 66px; font-style: italic; font-weight: 600; fill: #fff; }
-    .role { font-family: Inter, Arial, sans-serif; font-size: 20px; font-weight: 650; letter-spacing: 1px; fill: #e6edf3; }
-    .copy { font-family: Inter, Arial, sans-serif; font-size: 17px; fill: #9da7b3; }
+    .role { font-family: Inter, Arial, sans-serif; font-size: 23px; font-weight: 750; letter-spacing: .8px; fill: #fff; }
+    .copy { font-family: Inter, Arial, sans-serif; font-size: 19.5px; font-weight: 520; letter-spacing: .1px; fill: #c9d1d9; }
     .eyebrow { font-family: Inter, Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2.6px; fill: #8b949e; }
     .signature { animation: settle 8s cubic-bezier(.45,0,.55,1) infinite; transform-origin: 445px 82px; }
     .line { animation: draw 7s ease-in-out infinite; transform-origin: left; }

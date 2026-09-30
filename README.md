@@ -88,7 +88,7 @@
 
 ## Currently exploring
 
-Robotics · UAV systems · autonomous drones · edge AI
+### Robotics · UAV Systems · Autonomous Drones · Edge AI
 
 <div align="center">
 
