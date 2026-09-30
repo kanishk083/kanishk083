@@ -2,7 +2,8 @@
 
 <img src="./assets/animated_ai_network.svg" alt="Smooth monochrome animated developer and human-robot collaboration illustration" width="100%" />
 
-<img src="./assets/profile-identity.svg" alt="Kanishk Wagh — AI Systems Engineer" width="100%" />
+<img src="./assets/profile-identity.svg" alt="Kanishk Wagh — AI Systems Engineer" width="77%" />
+<img src="./assets/identity-cyber-eye.png" alt="Cybernetic eye" width="20%" />
 
 <p>
   <a href="https://kanishkwagh-portfolio.vercel.app/">Portfolio</a> ·
