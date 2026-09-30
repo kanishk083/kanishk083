@@ -40,6 +40,16 @@
   <img src="https://img.shields.io/badge/YOLO-161b22?style=flat-square&logo=yolo&logoColor=white" alt="YOLO" />
 </p>
 
+#### AI engineering
+
+<p>
+  <img src="https://img.shields.io/badge/AI_Infrastructure-161b22?style=flat-square&logo=linux&logoColor=white" alt="AI infrastructure" />
+  <img src="https://img.shields.io/badge/Context_Engineering-161b22?style=flat-square&logo=openai&logoColor=white" alt="Context engineering" />
+  <img src="https://img.shields.io/badge/Token_Optimization-161b22?style=flat-square&logo=speedtest&logoColor=white" alt="Token optimization" />
+  <img src="https://img.shields.io/badge/Multi--Agent_Systems-161b22?style=flat-square&logo=dependabot&logoColor=white" alt="Multi-agent systems" />
+  <img src="https://img.shields.io/badge/MLOps-161b22?style=flat-square&logo=mlflow&logoColor=white" alt="MLOps" />
+</p>
+
 #### Data & platform
 
 <p>
@@ -78,7 +88,7 @@
 
 ## Currently exploring
 
-AI infrastructure · context engineering · token optimization · multi-agent systems · MLOps
+Robotics · UAV systems · autonomous drones · edge AI
 
 <div align="center">
 
