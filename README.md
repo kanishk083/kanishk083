@@ -1,187 +1,76 @@
 <div align="center">
 
-<img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" height="150"/>
+<img src="./assets/neural-cv.svg" alt="Monochrome animated developer, neural network, and human-robot hand illustration" width="100%" />
 
-# 👋 Hi, I'm Kanishk Wagh
-
-### 🚀 AI Solutions Engineer • Backend Engineer • AI Engineer
-
-Building production-grade AI applications, scalable backend systems, and intelligent automation.
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/kanishk-wagh-937156365/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="https://x.com/kanishk9Ai">
-    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/>
-  </a>
-  <a href="mailto:kanishkwag69@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
+<p>
+  <a href="https://kanishkwagh-portfolio.vercel.app/">Portfolio</a> ·
+  <a href="https://github.com/kanishk083?tab=repositories">Repositories</a> ·
+  <a href="https://www.linkedin.com/in/kanishk-wagh-937156365/">LinkedIn</a> ·
+  <a href="https://x.com/kanishk9Ai">X</a> ·
+  <a href="mailto:kanishkwag69@gmail.com">Email</a>
 </p>
 
 </div>
 
----
+## About
 
-# 👨‍💻 About Me
+I build production AI applications, backend systems, and automation that turn complex workflows into reliable products.
 
-I'm an **AI Solutions Engineer and Backend Engineer** passionate about building production-grade AI systems that solve real-world problems.
+My work sits at the intersection of:
 
-My interests span:
+`Agentic AI` · `LLM applications` · `RAG` · `Computer vision` · `FastAPI` · `Distributed systems`
 
-- 🤖 Agentic AI
-- 🧠 LLM Applications
-- 🔍 Retrieval-Augmented Generation (RAG)
-- ⚡ Backend Engineering
-- 🏗️ Distributed Systems
-- 💰 Token Optimization
-- 👁️ Computer Vision
-- 🚀 AI Infrastructure
+## Selected work
 
----
+| Project | What it demonstrates | Links |
+| --- | --- | --- |
+| **Lumiqe** | AI-powered image analysis and personal styling with computer vision and LLMs. | [Repository](https://github.com/kanishk083/lumiqe) · [Portfolio](https://kanishkwagh-portfolio.vercel.app/) |
+| **ATLAS** | AI knowledge and memory systems built around retrieval, reasoning, and automation. | [Repository](https://github.com/kanishk083/ATLAS) |
+| **Drone Detection** | YOLO11n, FastAPI, Next.js, tracking, and measured CPU inference optimization. | [Repository](https://github.com/kanishk083/DRONE-DETECTION) |
+| **Competitor Analyzer Agent** | Website change detection, SHA-256 monitoring, and LLM-generated business insights. | [Repositories](https://github.com/kanishk083?tab=repositories&q=competitor) |
+| **SEO Automation Platform** | Backend automation for AI-powered SEO analysis, reporting, and background workers. | [Related repositories](https://github.com/kanishk083?tab=repositories&q=seo) |
+| **Pinnacle AI** | Product and automation work focused on practical business workflows. | [Live project](https://pinnacle-ai-psi.vercel.app/) |
 
-# 🛠️ Tech Stack
-
-## 💻 Languages
+## Engineering focus
 
 <p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="45"/>
-  <img width="10"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="45"/>
-</p>
-
----
-
-## ⚙️ Backend
-
-<p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" height="45"/>
-  <img width="10"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" height="45"/>
-  <img width="10"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="45"/>
+  <img src="https://img.shields.io/badge/Python-0f172a?style=for-the-badge&logo=python&logoColor=3776AB" alt="Python" />
+  <img src="https://img.shields.io/badge/FastAPI-0f172a?style=for-the-badge&logo=fastapi&logoColor=009688" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/PostgreSQL-0f172a?style=for-the-badge&logo=postgresql&logoColor=4169E1" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Redis-0f172a?style=for-the-badge&logo=redis&logoColor=DC382D" alt="Redis" />
+  <img src="https://img.shields.io/badge/Docker-0f172a?style=for-the-badge&logo=docker&logoColor=2496ED" alt="Docker" />
+  <img src="https://img.shields.io/badge/Next.js-0f172a?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/AsyncIO-blue?style=flat-square"/>
-  <img src="https://img.shields.io/badge/REST%20APIs-orange?style=flat-square"/>
-  <img src="https://img.shields.io/badge/WebSockets-success?style=flat-square"/>
-  <img src="https://img.shields.io/badge/JWT-black?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Celery-green?style=flat-square"/>
+  <img src="https://img.shields.io/badge/RAG-172554?style=flat-square" alt="RAG" />
+  <img src="https://img.shields.io/badge/LangGraph-312E81?style=flat-square" alt="LangGraph" />
+  <img src="https://img.shields.io/badge/OpenCV-172554?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV" />
+  <img src="https://img.shields.io/badge/YOLO-172554?style=flat-square" alt="YOLO" />
+  <img src="https://img.shields.io/badge/ONNX_Runtime-172554?style=flat-square" alt="ONNX Runtime" />
+  <img src="https://img.shields.io/badge/OpenVINO-172554?style=flat-square" alt="OpenVINO" />
 </p>
 
----
+## What I care about
 
-## 🗄️ Databases
+- Shipping AI systems that are measurable, observable, and maintainable.
+- Designing backend foundations that can survive real users and real workloads.
+- Making model performance, latency, and operating cost explicit engineering constraints.
 
-<p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="45"/>
-  <img width="10"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="45"/>
-</p>
+## Currently exploring
 
-<p>
-  <img src="https://img.shields.io/badge/pgvector-316192?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Semantic_Search-4285F4?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Embeddings-34A853?style=flat-square"/>
-</p>
-
----
-
-## 🤖 AI & LLM
-
-<p>
-  <img src="https://img.shields.io/badge/LangChain-00A67E?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/LangGraph-121212?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/CrewAI-orange?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai"/>
-  <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge"/>
-</p>
-
-<p>
-  <img src="https://img.shields.io/badge/RAG-6A5ACD?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Prompt_Engineering-blue?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Context_Engineering-success?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Multi_Agent_Systems-orange?style=flat-square"/>
-</p>
-
----
-
-## 👁️ Computer Vision
-
-<p>
-  <img src="https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=opencv&logoColor=white"/>
-  <img src="https://img.shields.io/badge/YOLO-black?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/MediaPipe-4285F4?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/BiSeNet-34A853?style=for-the-badge"/>
-</p>
-
----
-
-# 🚀 Featured Projects
-
-## 🎨 Lumiqe
-
-AI-powered personal styling platform combining **Computer Vision** and **LLMs**.
-
-**Stack**
-
-`FastAPI` • `PostgreSQL` • `Redis` • `OpenCV` • `MediaPipe` • `BiSeNet` • `JWT`
-
----
-
-## 🤖 Competitor Analyzer Agent
-
-AI agent that monitors competitor websites, detects changes using SHA-256 hashing, and generates business insights through LLMs.
-
-**Stack**
-
-`LangChain` • `OpenAI` • `SHA-256` • `Python`
-
----
-
-## 📈 SEO Automation Platform
-
-Production-grade backend automation system for AI-powered SEO analysis and reporting.
-
-**Stack**
-
-`FastAPI` • `PostgreSQL` • `Redis` • `Background Workers`
-
----
-
-## 🚁 Drone Detection System
-
-Real-time drone detection pipeline using YOLO and OpenCV.
-
-**Stack**
-
-`YOLO` • `OpenCV` • `Python`
-
----
-
-# 🌱 Currently Exploring
-
-- AI Infrastructure
-- Context Engineering
-- Token Optimization
-- Distributed Systems
-- Agentic AI
-- MLOps
-
----
-
-# 📫 Connect
-
-- 💼 LinkedIn: https://www.linkedin.com/in/kanishk-wagh-937156365/
-- 🐦 X: https://x.com/kanishk9Ai
-- 📧 Email: **kanishkwag69@gmail.com**
-
----
+AI infrastructure · context engineering · token optimization · multi-agent systems · MLOps
 
 <div align="center">
 
-### ⭐ Building production-grade AI systems that solve real-world problems.
+---
+
+<p><strong>Thoughtful systems. Measurable outcomes. Technology that earns trust.</strong></p>
+
+<p>
+  <a href="mailto:kanishkwag69@gmail.com">kanishkwag69@gmail.com</a> ·
+  <a href="https://www.linkedin.com/in/kanishk-wagh-937156365/">LinkedIn</a> ·
+  <a href="https://kanishkwagh-portfolio.vercel.app/">Portfolio</a>
+</p>
 
 </div>

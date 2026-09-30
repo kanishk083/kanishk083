@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
+  <title id="title">Kanishk Wagh — AI systems in motion</title>
+  <desc id="desc">A monochrome technical illustration of a developer, a neural network, and human robotic hands with animated signal overlays.</desc>
+  <defs>
+    <clipPath id="frame"><rect x="1" y="1" width="1198" height="458" rx="24"/></clipPath>
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity=".10"/>
+      <stop offset=".52" stop-color="#000" stop-opacity=".02"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".38"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    .signal { fill: none; stroke: #fff; stroke-width: 1.2; opacity: .6; stroke-dasharray: 5 12; animation: flow 4s linear infinite; }
+    .signal.alt { animation-delay: -1.5s; opacity: .35; }
+    .node { fill: #050505; stroke: #fff; stroke-width: 1.5; animation: pulse 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .node.two { animation-delay: -.8s; }
+    .node.three { animation-delay: -1.7s; }
+    .node.four { animation-delay: -2.3s; }
+    .scanline { animation: sweep 5.5s ease-in-out infinite; }
+    .corner { fill: none; stroke: #fff; stroke-width: 1; opacity: .42; stroke-dasharray: 18 8; animation: corner 8s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -68; } }
+    @keyframes pulse { 0%,100% { opacity: .34; transform: scale(.8); } 50% { opacity: 1; transform: scale(1.28); } }
+    @keyframes sweep { 0%,100% { transform: translateX(-180px); opacity: 0; } 20%,80% { opacity: 1; } 50% { transform: translateX(1380px); } }
+    @keyframes corner { to { stroke-dashoffset: -52; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <g clip-path="url(#frame)">
+    <image href="./profile-hero-mono.png" xlink:href="./profile-hero-mono.png" x="0" y="0" width="1200" height="460" preserveAspectRatio="xMidYMid slice"/>
+    <rect width="1200" height="460" fill="url(#shade)"/>
+
+    <!-- Subtle animated data flow through the middle system. -->
+    <path class="signal" d="M380 228 C470 170 515 274 602 220 S755 175 838 232"/>
+    <path class="signal alt" d="M400 278 C485 326 535 204 620 258 S756 310 858 246"/>
+    <path class="signal" d="M430 190 C515 144 575 212 642 184 S760 151 820 196"/>
+
+    <!-- Pulsing signal nodes reinforce the neural-network animation. -->
+    <circle class="node" cx="500" cy="236" r="4" filter="url(#glow)"/>
+    <circle class="node two" cx="602" cy="220" r="5" filter="url(#glow)"/>
+    <circle class="node three" cx="704" cy="250" r="4" filter="url(#glow)"/>
+    <circle class="node four" cx="812" cy="232" r="5" filter="url(#glow)"/>
+
+    <rect class="scanline" x="-180" y="0" width="180" height="460" fill="url(#scan)" opacity=".42"/>
+    <rect class="corner" x="18" y="18" width="1164" height="424" rx="18"/>
+    <path d="M40 410 H300 M900 410 H1160" stroke="#fff" stroke-width="1" opacity=".24"/>
+  </g>
+  <rect x="1" y="1" width="1198" height="458" rx="24" fill="none" stroke="#fff" stroke-opacity=".42"/>
+</svg>
